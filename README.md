@@ -35,7 +35,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   </p>
  <hr>
  <h2>Vercel</h2>
- <a href="https://app-to-do-list-delta.vercel.app/">Pokedex</a>
+ <a href="https://pokedex-eight-olive.vercel.app/">Pokedex</a>
 
 ## Development server
 
