@@ -18,14 +18,16 @@ export class DetailsComponent implements OnInit {
   public isLoading: boolean = false;
   public apiError: boolean = false;
 
+
   constructor(
-    private pokeApiService: PokeApiService,
-    private activatedRoute: ActivatedRoute
-  ){}
+    private activatedRoute: ActivatedRoute,
+    private pokeApiService: PokeApiService
+  ) { }
 
   ngOnInit(): void {
-    this.getPokemon;
+    this.getPokemon();
   }
+
   public getPokemon(){
     const id = this.activatedRoute.snapshot.params['id'];
     const pokemon = this.pokeApiService.apiGetPokemons(`${this.urlPokemon}/${id}`);
@@ -38,9 +40,8 @@ export class DetailsComponent implements OnInit {
       },
       error => {
         this.apiError = true;
-
       }
     );
   }
-
 }
+
